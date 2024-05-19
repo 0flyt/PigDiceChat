@@ -1,0 +1,16 @@
+Installera först med npm, öppna terminlafönstret i samma katalog som du ska köra filerna.
+
+1. Skapa package.json fil
+npm init
+
+2. Installera Express (lokalt i den katalog du har filerna)
+npm install express
+
+3. Installera socket.io
+npm install socket.io
+
+4. Installera mongoose
+npm install mongoose
+
+Kör koden i ett terminalfönster i samma katalog
+node app.js

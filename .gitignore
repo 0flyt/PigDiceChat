@@ -1,0 +1,8 @@
+# Ignorera alla filer som slutar med .log
+*.log
+
+# Ignorera en specifik mapp som heter "node_modules"
+node_modules/
+
+# Ignorera en specifik fil som heter ".env" som innehåller känslig information
+.env

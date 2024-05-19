@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pig Dice Game</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div id="userContainer">
+            <form id="formUser" class="form">
+                <input
+                    type="text"
+                    id="inputUser"
+                    placeholder="Skriv ditt namn"
+                    class="input"
+                />
+                <button class="btn">Enter</button>
+            </form>
+        </div>
+        <div id="body2" style="display: none">
+            <div id="gameContainer" class="container">
+                <h1>Pig Dice Game</h1>
+                <div id="turnIndicator" class="indicator"></div>
+                <div id="messageDisplay" class="message-display"></div>
+                <ul id="playerList" class="player-list"></ul>
+                <button id="joinButton" class="btn">Join Game</button>
+                <button id="cancelButton" class="btn" style="display: none">
+                    Cancel
+                </button>
+                <button id="startButton" class="btn" style="display: none">
+                    Start Game
+                </button>
+                <button id="rollButton" class="btn" style="display: none">
+                    Roll Dice
+                </button>
+                <button id="holdButton" class="btn" style="display: none">
+                    Hold
+                </button>
+            </div>
+            <div id="chat" class="container">
+                <ul id="messages" class="messages"></ul>
+                <form id="formMessage" class="form">
+                    <input
+                        id="inputMessage"
+                        autocomplete="off"
+                        placeholder="Skriv ett meddelande"
+                        class="input"
+                    />
+                    <button class="btn">Skicka</button>
+                </form>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="client.js"></script>
+    </body>
+</html>
